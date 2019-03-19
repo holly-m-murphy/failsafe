@@ -1,1 +1,3 @@
-terra_modules/
+terra_modules/form.tfstate.lock.info
+terra_modules/.terraform/
+terra_modules/terraform.tfstate
