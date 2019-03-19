@@ -11,5 +11,18 @@ variable "region" {
 }
 
 variable "total_instances"{
-  default=1
+  default="${var.env-name=="stage" ?  1:2}"
+}
+
+variable "env-name" {
+  default="stage"
+  prod="prod"
+}
+
+variable "bucket" {
+  default="table2mpterraform4"
+}
+
+variable "bucket-key"{
+  default="modules"
 }
